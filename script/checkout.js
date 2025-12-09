@@ -11,14 +11,20 @@ async function loadPage() {
     
     // await lets us write asynchronous code like normal code
     // async await shortcut for promises 
-    await loadProductsFetch();
-
-    const value = await new Promise((resolve) => {
-        loadCart(() => {
-            resolve('value3');
+    try{
+        //throw 'error1';
+        await loadProductsFetch(); 
+        //reject let us create an error in the future
+        const value = await new Promise((resolve,reject) => {
+            //throw 'error2';
+            loadCart(() => {
+                //reject('error3');
+                resolve('value3');
+            });
         });
-    });
-
+    } catch(error){
+        console.log('Unexpected error, Please try agin later.');
+    }
     renderOrderSummary();
     renderPaymentSummary();
 
