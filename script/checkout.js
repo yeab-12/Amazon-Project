@@ -1,11 +1,41 @@
 import {renderOrderSummary} from './checkout/orderSummary.js';
 import {renderPaymentSummary} from '/script/checkout/paymentSummary.js';
-import {loadProducts} from '../data/products.js';
+import {loadProducts,loadProductsFetch} from '../data/products.js';
 import { cart, loadCart } from '../data/cart.js';
 //import '../data/cart-class.js';
 //import '../data/backend-practise.js';
 
+/**Async Await is even better way to handle asynchronous code */
+async function loadPage() {
+    //console.log('load page');//async is makes a function return a promise
+    
+    // await lets us write asynchronous code like normal code
+    // async await shortcut for promises 
+    await loadProductsFetch();
+
+    const value = await new Promise((resolve) => {
+        loadCart(() => {
+            resolve('value3');
+        });
+    });
+
+    renderOrderSummary();
+    renderPaymentSummary();
+
+    //return 'value2';
+}
+//await =lets us wait for a promise to finish,before going to the next lines
+loadPage();
+/*.then((value)=>{
+    console.log('next step');
+    console.log(value);
+});*/
+
+
+/*
 Promise.all([
+    loadProductsFetch()
+    /*
     new Promise((resolve)=>{
         loadProducts(()=>{
             resolve('value1');
@@ -20,7 +50,9 @@ Promise.all([
     console.log(values);
     renderOrderSummary();
     renderPaymentSummary();
-});
+});/*
+
+
 /**promises class
      * better way to handle asynchronous code
      * similar to done() function
