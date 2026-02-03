@@ -1,20 +1,22 @@
 # Amazon Clone (Frontend)
 
-This is a **simple Amazon‑like frontend project** built using basic web technologies. The project is for **practice and learning purposes**, focusing on page layout, styling, and JavaScript logic.
+This is a **simple Amazon-like frontend web project** built for **practice and learning purposes**.  
+It focuses on page layout, responsive design, and basic JavaScript logic for user interaction.
+
+> ⚠️ This project is **not affiliated with Amazon**. It is created only for educational use.
 
 ---
 
 ## Technologies Used
 
-* HTML
-* CSS
-* JavaScript
+- HTML
+- CSS
+- JavaScript
 
 ---
 
-## Project Files
+## Project Structure
 
-```
 backend/
 data/
 images/
@@ -22,28 +24,53 @@ script/
 styles/
 tests/
 
-amazon.html   – main page
-checkout.html – checkout page
-orders.html   – orders page
-tracking.html – tracking page
-```
+amazon.html – Home page
+checkout.html – Checkout page
+orders.html – Orders page
+tracking.html – Order tracking page
+
 
 ---
 
-## How to Run
+## 
 
-1. Download or clone the project
-2. Open `amazon.html` in a browser
-3. No server needed
+### Home Page
+<img width="1899" height="911" alt="Screenshot 2026-02-03 212858" src="https://github.com/user-attachments/assets/cccf3d1e-d7cb-4261-afd9-f87980954e2e" />
+
+
+### Checkout Page
+<img width="1898" height="915" alt="Screenshot 2026-02-03 212939" src="https://github.com/user-attachments/assets/0bd93df3-354e-4d5a-a2e4-1df4eba89cdf" />
+
+### Orders Page
+<img width="1899" height="912" alt="Screenshot 2026-02-03 213209" src="https://github.com/user-attachments/assets/a67924a2-752b-4fcb-a0f4-14cd10a76c38" />
+
+
 
 ---
 
-## Note
+## How to Run the Project
 
-This project is for **learning only** and is **not related to Amazon**.
+1. Clone or download this repository
+2. Open `amazon.html` in any modern web browser
+3. No server or installation required
+
+---
+
+## Purpose
+
+- Practice frontend web development
+- Improve HTML & CSS layout skills
+- Learn JavaScript DOM manipulation
+- Understand basic e-commerce UI flow
 
 ---
 
 ## Author
 
-Yeabsira Getachew
+**Yeabsira Getachew**  
+Software Engineering Student | Web Developer  
+GitHub: https://github.com/yeab-12
+
+---
+
+© 2025 Yeabsira Getachew
